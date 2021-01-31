@@ -1,0 +1,97 @@
+body {
+    background-image: linear-gradient(beige, rgb(202, 202, 195));
+
+    font-family:cursive;
+    font-size: 13px;
+ }
+
+.padre{
+display: grid;
+
+grid-template-columns: 15% 42.5% 42.5%;
+grid-template-rows: 500px ;
+
+grid-template-areas:
+                    "izquierda centro derecha"
+                    "izquierda centro derecha";
+}
+
+
+.header{
+    width: 100%;
+    color: brown; margin: 2px 2px 2px 2px;
+        display: inline;
+        list-style-type: none;
+}
+
+.izquierda{
+    grid-area: izquierda;
+    color: brown; margin: 2px 2px 2px 2px;
+    
+
+    padding: 5px;
+    margin: 4px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    }
+.flex{
+    display: flexbox;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    
+}
+.imagen{
+    width: 100px;
+    height: 100px;
+}
+
+
+.logo{animation: logo 12s infinite;}
+
+@keyframes logo{
+    from{transform: rotatex(0deg)}
+    to{transform: rotatex(360deg)}
+}
+.centro{
+    grid-area: centro;
+    color: brown; margin: 2px 2px 2px 2px;
+    display: block;
+    padding: 5px;
+    margin: 4px;
+    justify-content: center;
+    align-content: center;
+    font-size:small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.derecha{
+    grid-area: derecha;
+    color: brown; margin: 2px 2px 2px 2px;
+    padding: 5px;
+    margin: 4px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size:small;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+.footer{
+    grid-area: footer;
+    margin-top: 4px;
+    color: darkgreen; 
+    align-content: left;
+    justify-content: left;
+    text-align: center;
+}
+
